@@ -172,7 +172,7 @@ $("#dialer").on("pagecreate", function() {
       .done(function(data) {
         
         // patch for nesting
-        data.elements = data.scores;
+        // data.elements = data.scores;
         
         update_grades(data.elements[0])
         

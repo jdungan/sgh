@@ -134,6 +134,7 @@ var sgh = new(function api() {
 
   this.call_api = function(uri, ajax_params) {
     ajax_params = ajax_params || {};
+    ajax_params.format = 'jsonp'
     return $.ajax({
       type: "get",
       url: this.options.url + uri + this.loc.position,
